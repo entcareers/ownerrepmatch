@@ -265,11 +265,17 @@ p:last-child {
    ---------------------------------------- */
 .header {
   position: sticky;
-  top: 0;
+  top: 40px;
   z-index: 1000;
   background-color: var(--bg-white);
   border-bottom: 1px solid var(--border-light);
   height: var(--header-height);
+}
+
+@media (max-width: 480px) {
+  .header {
+    top: 50px;
+  }
 }
 
 .header__inner {
@@ -925,6 +931,9 @@ p:last-child {
   padding: var(--space-sm) var(--space-md);
   text-align: center;
   font-size: var(--font-size-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1001;
 }
 
 .announcement__inner {

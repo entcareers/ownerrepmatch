@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | OwnerRepMatch</title>
+  <meta name="description" content="Contact OwnerRepMatch to discuss your custom home project or learn more about our owner's representative network.">
+  <link rel="canonical" href="https://ownerrepmatch.com/contact.html">
+  <link rel="icon" type="image/png" href="/assets/images/ownerrepmatch-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .form-group { margin-bottom: var(--space-lg); }
+    .form-label { display: block; font-weight: 500; margin-bottom: var(--space-sm); color: var(--text-primary); }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: 0.75rem 1rem; font-size: var(--font-size-base);
+      border: 1px solid var(--border); border-radius: var(--radius-md);
+      background: var(--bg-white); transition: border-color var(--transition-fast);
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none; border-color: var(--bronze-500);
+    }
+    .form-textarea { min-height: 150px; resize: vertical; }
+    .form-hint { font-size: var(--font-size-sm); color: var(--text-secondary); margin-top: var(--space-xs); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="header__logo" aria-label="OwnerRepMatch Home">
+        <img src="/assets/images/ownerrepmatch-logo.png" alt="OwnerRepMatch" width="200" height="44">
+      </a>
+      <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="main-nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="/find-an-owners-rep.html" class="header__nav-link">Find an Owner's Rep</a></li>
+          <li><a href="/how-it-works.html" class="header__nav-link">How It Works</a></li>
+          <li><a href="/join-the-network.html" class="header__nav-link">For Professionals</a></li>
+          <li><a href="/about.html" class="header__nav-link">About</a></li>
+          <li><a href="/contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="/find-an-owners-rep.html" class="btn btn--primary">Find an Owner's Rep</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h1>Contact Us</h1>
+          <p>Have a question or want to discuss your project? We're here to help.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <h2>General Inquiries</h2>
+            <p>For general questions about OwnerRepMatch, how we work, or anything else:</p>
+            <p style="margin-top: var(--space-md);"><strong>Email:</strong> <a href="mailto:brad@bradhall.net">brad@bradhall.net</a></p>
+          </div>
+          <div>
+            <h2>For Professionals</h2>
+            <p>Interested in joining our network of owner's representatives?</p>
+            <p style="margin-top: var(--space-md);"><a href="https://calendly.com/bradhall/30-minute-meeting" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Schedule an Interview</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="project-inquiry">
+      <div class="container">
+        <div class="section__header">
+          <h2>Project Inquiry</h2>
+          <p>Tell us about your custom home or renovation project and we'll help identify the right owner's representative for your needs.</p>
+        </div>
+
+        <form action="mailto:brad@bradhall.net" method="post" enctype="text/plain" style="max-width: 700px; margin: 0 auto;">
+          
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name *</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email *</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="location">Project Location *</label>
+            <input type="text" id="location" name="location" class="form-input" placeholder="City, State" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="project-type">Project Type *</label>
+            <select id="project-type" name="project-type" class="form-select" required>
+              <option value="">Select...</option>
+              <option value="custom-home">Custom Home Construction</option>
+              <option value="major-renovation">Major Renovation / Remodel</option>
+              <option value="addition">Home Addition</option>
+              <option value="historic">Historic Renovation</option>
+              <option value="estate">Estate Property</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="budget">Estimated Project Budget *</label>
+            <select id="budget" name="budget" class="form-select" required>
+              <option value="">Select...</option>
+              <option value="under-1m">Under $1 million</option>
+              <option value="1m-2m">$1 million – $2 million</option>
+              <option value="2m-5m">$2 million – $5 million</option>
+              <option value="5m-10m">$5 million – $10 million</option>
+              <option value="10m-plus">$10 million+</option>
+              <option value="undetermined">Not Yet Determined</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="stage">Current Project Stage *</label>
+            <select id="stage" name="stage" class="form-select" required>
+              <option value="">Select...</option>
+              <option value="exploring">Exploring an Idea</option>
+              <option value="site-search">Site or Property Search</option>
+              <option value="planning">Early Planning</option>
+              <option value="design">Design</option>
+              <option value="permitting">Permitting</option>
+              <option value="contractor-selection">Contractor Selection</option>
+              <option value="construction">Construction Underway</option>
+              <option value="troubled">Troubled or Delayed Project</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="description">Project Description *</label>
+            <textarea id="description" name="description" class="form-textarea" placeholder="Tell us about your project, what kind of support you're looking for, and any other relevant details..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="how-heard">How did you hear about OwnerRepMatch?</label>
+            <input type="text" id="how-heard" name="how-heard" class="form-input">
+          </div>
+
+          <p class="form-hint" style="margin-bottom: var(--space-lg);">By submitting this form, you agree that OwnerRepMatch may contact you regarding your inquiry and may share relevant project information with potential owner's representatives for the purpose of evaluating a possible introduction. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+
+          <button type="submit" class="btn btn--primary btn--lg">Submit Project Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo"><span class="footer__wordmark">OwnerRepMatch</span></div>
+          <p class="footer__tagline">Your Advocate. Your Project.</p>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__heading">Directory</h4>
+          <ul class="footer__links">
+            <li><a href="/find-an-owners-rep.html" class="footer__link">Find an Owner's Rep</a></li>
+            <li><a href="/how-it-works.html" class="footer__link">How It Works</a></li>
+            <li><a href="/join-the-network.html" class="footer__link">For Professionals</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="/about.html" class="footer__link">About</a></li>
+            <li><a href="/contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__heading">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="/privacy.html" class="footer__link">Privacy Policy</a></li>
+            <li><a href="/terms.html" class="footer__link">Terms of Service</a></li>
+            <li><a href="/disclaimer.html" class="footer__link">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 OwnerRepMatch. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

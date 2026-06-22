@@ -1,0 +1,25 @@
+{
+  "routes": [
+    {
+      "route": "/ron-gonen",
+      "rewrite": "/profiles/ron-gonen.html"
+    },
+    {
+      "route": "/ron-gonen/",
+      "rewrite": "/profiles/ron-gonen.html"
+    },
+    {
+      "route": "/profiles/ron-gonen",
+      "rewrite": "/profiles/ron-gonen.html"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/404.html",
+    "exclude": ["/assets/*", "/*.html"]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
+  }
+}

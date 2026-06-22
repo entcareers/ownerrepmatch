@@ -3,12 +3,9 @@
     {
       "route": "/profiles/:name",
       "rewrite": "/profiles/:name.html"
-    },
-    {
-      "route": "/profiles/:name/",
-      "rewrite": "/profiles/:name.html"
     }
   ],
+  "trailingSlash": "auto",
   "navigationFallback": {
     "rewrite": "/404.html",
     "exclude": ["/assets/*", "/*.html"]

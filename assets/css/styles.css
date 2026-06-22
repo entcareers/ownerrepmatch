@@ -1093,6 +1093,25 @@ p:last-child {
 /* ----------------------------------------
    Profile Page
    ---------------------------------------- */
+.profile-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.profile-banner__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(15, 28, 46, 0.3), rgba(15, 28, 46, 0.6));
+}
+
+@media (max-width: 768px) {
+  .profile-banner {
+    height: 200px;
+  }
+}
+
 .profile {
   display: grid;
   grid-template-columns: 280px 1fr;

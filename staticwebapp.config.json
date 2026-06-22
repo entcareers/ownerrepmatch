@@ -3,6 +3,14 @@
     {
       "route": "/profiles/:name",
       "rewrite": "/profiles/:name.html"
+    },
+    {
+      "route": "/what-is-an-owners-rep",
+      "rewrite": "/what-is-an-owners-rep.html"
+    },
+    {
+      "route": "/pacific-palisades-fire-rebuild",
+      "rewrite": "/pacific-palisades-fire-rebuild.html"
     }
   ],
   "trailingSlash": "auto",

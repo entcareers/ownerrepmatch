@@ -183,7 +183,7 @@ p:last-child {
 }
 
 .section {
-  padding: var(--space-3xl) 0;
+  padding: var(--space-2xl) 0;
 }
 
 .section--alt {
@@ -432,11 +432,11 @@ p:last-child {
 .section__header {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto var(--space-xl);
+  margin: 0 auto var(--space-lg);
 }
 
 .section__header h2 {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .section__header p {
@@ -457,9 +457,18 @@ p:last-child {
   text-align: center;
 }
 
+.what-is__content h2 {
+  margin-bottom: var(--space-md);
+}
+
 .what-is__content p {
   font-size: var(--font-size-lg);
   color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.what-is__content p:last-child {
+  margin-bottom: 0;
 }
 
 /* ----------------------------------------
@@ -558,6 +567,57 @@ p:last-child {
   width: calc(100% - 96px);
   height: 2px;
   background-color: var(--border);
+}
+
+/* ----------------------------------------
+   Pacific Palisades Callout
+   ---------------------------------------- */
+.palisades-callout__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.palisades-callout h2 {
+  color: var(--text-light);
+  margin-bottom: var(--space-md);
+}
+
+.palisades-callout__lead {
+  font-size: var(--font-size-lg);
+  color: var(--slate-300);
+  margin-bottom: var(--space-xl);
+}
+
+.palisades-callout__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-xl);
+  text-align: left;
+  display: inline-block;
+}
+
+.palisades-callout__list li {
+  padding: var(--space-sm) 0;
+  padding-left: var(--space-lg);
+  position: relative;
+  color: var(--slate-100);
+}
+
+.palisades-callout__list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--bronze-400);
+  font-weight: 600;
+}
+
+.palisades-callout__list strong {
+  color: var(--text-light);
+}
+
+.palisades-callout__cta {
+  margin-top: var(--space-lg);
 }
 
 /* ----------------------------------------
@@ -984,7 +1044,7 @@ p:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-lg);
-  margin-top: var(--space-2xl);
+  margin-top: var(--space-lg);
 }
 
 .before-after__item {

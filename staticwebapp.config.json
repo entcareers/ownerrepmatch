@@ -1,20 +1,12 @@
 {
   "routes": [
     {
-      "route": "/ron-gonen",
-      "rewrite": "/profiles/ron-gonen.html"
+      "route": "/profiles/:name",
+      "rewrite": "/profiles/:name.html"
     },
     {
-      "route": "/ron-gonen/",
-      "rewrite": "/profiles/ron-gonen.html"
-    },
-    {
-      "route": "/profiles/ron-gonen",
-      "rewrite": "/profiles/ron-gonen.html"
-    },
-    {
-      "route": "/profiles/ron-gonen/",
-      "rewrite": "/profiles/ron-gonen.html"
+      "route": "/profiles/:name/",
+      "rewrite": "/profiles/:name.html"
     }
   ],
   "navigationFallback": {
